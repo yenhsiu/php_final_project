@@ -1,0 +1,185 @@
+/* Global Layout Set-up */
+* { 
+    box-sizing: border-box;
+  }
+    
+  body {
+    margin: 0;
+    padding: 0;
+    font-family:'Microsoft JhengHei';
+    color: black;
+    background: #454545;
+  }
+  /* Link Styles */
+  
+  a {
+    text-decoration: none;
+    color: black;
+
+  }
+  a:hover {
+    color: white;
+  }
+
+  /* Section Styles */
+  
+  .main-nav {
+    width: 100%;
+    background: #BABABA;
+    min-height: auto;
+    min-width: 20px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .nav .name {
+    color:black;
+    display: none;
+  }
+  
+  .nav li {
+    padding: 5px 10px 10px 10px;
+  }
+  .nav a {
+    transition: all .5s;
+  }
+  
+  .nav a:hover {
+    color: white;
+  }
+  
+  header {
+    
+    text-align: center;
+    background: #454545	;
+  /*   background: url(https://www.iliketowastemytime.com/sites/default/files/night-sky-hd-wallpaper.jpg) no-repeat top center ; */
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 50px;
+  }
+  header {
+    line-height: 1.5;
+  }
+  header .profile-image {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    transition: all .5s;
+    font-family: 'Microsoft JhengHei', sans-serif;
+  }
+  
+  header .profile-image:hover {
+    transform: scale(1.5) rotate(1080deg);
+  }
+  .content {
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    min-height: 300px;
+    display: inline-block;
+    padding: 10px;
+    margin-left: -180px;
+    margin-top: -30px;
+    position: fixed;
+    text-align: center;
+    
+  }
+  
+  .skills li {
+    font-size:20px;
+    border-radius: 6px;
+    display: inline-block;
+    font-family:'Microsoft JhengHei';
+    border: 3px solid #2E8B57;
+    padding: 50px 50px;
+    margin: 50px;
+  }
+  
+  /* .skills li:nth-child(odd) {
+  
+    border-radius: 6px;
+    display: inline-block;
+    font-family:'Microsoft JhengHei';
+    border: 3px solid #2E8B57;
+    font-size:20px;
+    padding: 50px 50px;
+    margin: 50px;
+  } */
+  
+  footer {
+    text-align: center;
+    color:black;
+    font-size:10px;
+    background: #BABABA;
+    width: 100%;
+    padding: 0;
+  }
+  
+  /* footer .copyright {
+    text-align: center;
+    background: #BABABA;
+    margin-right: 20px;
+    font-size: .75em;
+  }
+   */
+ 
+  
+  
+  
+  /* Styles for larger screens */
+  @media screen and (min-width: 720px) {
+    
+    .flex {
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-around;
+        margin:  auto;
+    }
+  
+    header {
+      min-height: 600px;
+    }
+  
+    .nav {
+      max-width: 1200px;
+    }
+  
+    .nav .name {
+      display: block;
+      margin-right: auto;
+      color: black;
+    }
+  
+    main {
+      padding-top: 50px;
+    }
+  
+    main p {
+      line-height: 1.6em;
+    }
+  
+    footer {
+      font-size: 15px;
+      margin-bottom:  0;
+      position: absolute;
+      bottom: 0;
+      margin:0;
+      padding:0px;
+    }
+  
+  }
+  
+  
